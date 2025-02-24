@@ -1,7 +1,7 @@
 # Riemann Sums
 The unique function I chose for this project was $$e^x$$. I modeled it in Mathematica by editing the template function for a left Riemann sum to include my function and then plotted it with various n values to show how the accuracy increased as more rectangles were created.  
-### Here is a sample of my code for 3 subintervals (n=3):  
-```
+#### Here is a sample of my code for 3 subintervals (n=3):  
+```mathematica
 LeftRiemannSum3DPositive[f_, {a_?NumericQ, b_?NumericQ}, n_Integer?Positive, thickness_?Positive, plotFunction_ : True] := 
   Module[{dx, cuboids, funcPlot, combinedPlot},
    If[b <= a, Return[$Failed, Module]];
