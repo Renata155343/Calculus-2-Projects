@@ -1,6 +1,6 @@
 # Riemann Sums
 The unique function I chose for this project was $$e^x$$. I modeled it in Mathematica by editing the template function for a left Riemann sum to include my function and then plotted it with various n values to show how the accuracy increased as more rectangles were created.  
-## Here is a sample of my code for 3 subintervals (n=3):  
+### Here is a sample of my code for 3 subintervals (n=3):  
 ```
 LeftRiemannSum3DPositive[f_, {a_?NumericQ, b_?NumericQ}, n_Integer?Positive, thickness_?Positive, plotFunction_ : True] := 
   Module[{dx, cuboids, funcPlot, combinedPlot},
@@ -30,7 +30,7 @@ Export["sinPlot1.stl", myPlot];
 CloudExport[myPlot, "STL", CloudObject["ExpPlot1.stl"]]
 ```
 After creating my graph, I uploaded it to BambuStudio and increased its size to reasonable proportions.  
-## Here is my function modeled with left Riemann sums in Bambu:  
+### Here is my function modeled with left Riemann sums in Bambu:  
 <img width="519" alt="Screenshot 2025-02-24 at 1 11 15 PM" src="https://github.com/user-attachments/assets/82c277b6-12fd-44ae-98f7-10bfd3a43c9b" />
 
 Then, after downloading Fusion 360, I designed the base with slits to hold my function inserts. I also embedded the name of my function onto the base for increased identification and clarity.  
