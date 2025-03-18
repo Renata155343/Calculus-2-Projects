@@ -1,5 +1,5 @@
 # Solids of Revolution
-I chose the function $$Arccos(x)$$ with a domain from -1 to 1. I then rotated my graph around the x-axis to create a solid of revolution.
+I chose the function $$Arccos(x)$$ with a domain from -1 to 1. I then rotated my graph around the x-axis to create a solid of revolution.  
 **Here is my code for the function:**
 ```mathematica
 (*Define the function,range,and number of disks*)f[x_] := ArcCos[x];
@@ -17,14 +17,14 @@ disks = Table[
 solid = Graphics3D[Flatten@disks, Axes -> True, Boxed -> True];
 ```
 
-**Here is the digital mathematical modeling of my function with 20 sub-intervals: **
+**Here is the digital mathematical modeling of my function with 20 sub-intervals:**
 
 
 I then modeled my function to create the exact revolution.  
-**Here is my code: **
+**Here is my code:**
 ```mathematica
 T = RevolutionPlot3D[ArcCos[t], {t, -1, 1}, 
    RevolutionAxis -> {1, 0, 0}];
    ```
 
-**Here is the model of that exact rotation: **
+**Here is the model of that exact rotation:**
