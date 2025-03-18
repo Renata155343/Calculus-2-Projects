@@ -17,7 +17,8 @@ disks = Table[
 solid = Graphics3D[Flatten@disks, Axes -> True, Boxed -> True];
 ```
 
-**Here is the digital mathematical modeling of my function with 20 sub-intervals:**
+**Here is the digital mathematical modeling of my function with 20 sub-intervals:**  
+
 <img width="260" alt="image" src="https://github.com/user-attachments/assets/5151aec4-04c4-42c3-80f7-2589281e80bb" />
 
 
@@ -28,5 +29,6 @@ T = RevolutionPlot3D[ArcCos[t], {t, -1, 1},
    RevolutionAxis -> {1, 0, 0}];
    ```
 
-**Here is the model of that exact rotation:**
+**Here is the model of that exact rotation:**  
+
 <img width="251" alt="image" src="https://github.com/user-attachments/assets/5ac8dfe1-354f-4c11-ba33-f5e1ac348814" />
